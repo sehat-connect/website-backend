@@ -1,0 +1,2010 @@
+[2024-06-06T01:30:34.681] [ERROR] default - Error
+    at Query.run (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.insert (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)
+    at async model.save (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:2490:35)
+    at async tbl_user.create (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:1362:12)
+    at async verifyOtp (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/api/user/controller.js:332:18) {
+  name: 'SequelizeDatabaseError',
+  parent: Error: Column 'dob' cannot be null
+      at Packet.asError (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/packets/packet.js:728:17)
+      at Execute.execute (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:478:34)
+      at PacketParser.onPacket (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:97:12)
+      at PacketParser.executeStart (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:104:25)
+      at Socket.emit (node:events:515:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:545:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:495:3) {
+    code: 'ER_BAD_NULL_ERROR',
+    errno: 1048,
+    sqlState: '23000',
+    sqlMessage: "Column 'dob' cannot be null",
+    sql: 'INSERT INTO `tbl_users` (`id`,`lastName`,`phone`,`role`,`photo`,`dob`,`gender`,`active`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?);',
+    parameters: [
+      null,
+      '8860027932',
+      2,
+      null,
+      null,
+      null,
+      true,
+      '2024-06-05 18:30:34',
+      '2024-06-05 18:30:34'
+    ]
+  },
+  original: Error: Column 'dob' cannot be null
+      at Packet.asError (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/packets/packet.js:728:17)
+      at Execute.execute (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:478:34)
+      at PacketParser.onPacket (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:97:12)
+      at PacketParser.executeStart (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:104:25)
+      at Socket.emit (node:events:515:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:545:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:495:3) {
+    code: 'ER_BAD_NULL_ERROR',
+    errno: 1048,
+    sqlState: '23000',
+    sqlMessage: "Column 'dob' cannot be null",
+    sql: 'INSERT INTO `tbl_users` (`id`,`lastName`,`phone`,`role`,`photo`,`dob`,`gender`,`active`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?);',
+    parameters: [
+      null,
+      '8860027932',
+      2,
+      null,
+      null,
+      null,
+      true,
+      '2024-06-05 18:30:34',
+      '2024-06-05 18:30:34'
+    ]
+  },
+  sql: 'INSERT INTO `tbl_users` (`id`,`lastName`,`phone`,`role`,`photo`,`dob`,`gender`,`active`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?);',
+  parameters: [
+    null,
+    '8860027932',
+    2,
+    null,
+    null,
+    null,
+    true,
+    '2024-06-05 18:30:34',
+    '2024-06-05 18:30:34'
+  ]
+}
+[2024-06-06T01:30:34.689] [ERROR] default - {
+  message: "Column 'dob' cannot be null",
+  stack: 'Error\n' +
+    '    at Query.run (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)\n' +
+    '    at /Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/sequelize.js:315:28\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async MySQLQueryInterface.insert (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)\n' +
+    '    at async model.save (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:2490:35)\n' +
+    '    at async tbl_user.create (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:1362:12)\n' +
+    '    at async verifyOtp (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/api/user/controller.js:332:18)'
+}
+[2024-06-06T10:14:16.370] [ERROR] default - Error
+    at Query.run (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.insert (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)
+    at async model.save (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:2490:35)
+    at async tbl_user.create (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:1362:12)
+    at async verifyOtp (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/api/user/controller.js:370:17) {
+  name: 'SequelizeDatabaseError',
+  parent: Error: Column 'dob' cannot be null
+      at Packet.asError (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/packets/packet.js:728:17)
+      at Execute.execute (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:478:34)
+      at PacketParser.onPacket (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:97:12)
+      at PacketParser.executeStart (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:104:25)
+      at Socket.emit (node:events:515:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:545:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:495:3) {
+    code: 'ER_BAD_NULL_ERROR',
+    errno: 1048,
+    sqlState: '23000',
+    sqlMessage: "Column 'dob' cannot be null",
+    sql: 'INSERT INTO `tbl_users` (`id`,`lastName`,`phone`,`role`,`photo`,`dob`,`gender`,`active`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?);',
+    parameters: [
+      null,
+      '8860027932',
+      2,
+      null,
+      null,
+      null,
+      true,
+      '2024-06-06 03:14:16',
+      '2024-06-06 03:14:16'
+    ]
+  },
+  original: Error: Column 'dob' cannot be null
+      at Packet.asError (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/packets/packet.js:728:17)
+      at Execute.execute (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:478:34)
+      at PacketParser.onPacket (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:97:12)
+      at PacketParser.executeStart (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:104:25)
+      at Socket.emit (node:events:515:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:545:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:495:3) {
+    code: 'ER_BAD_NULL_ERROR',
+    errno: 1048,
+    sqlState: '23000',
+    sqlMessage: "Column 'dob' cannot be null",
+    sql: 'INSERT INTO `tbl_users` (`id`,`lastName`,`phone`,`role`,`photo`,`dob`,`gender`,`active`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?);',
+    parameters: [
+      null,
+      '8860027932',
+      2,
+      null,
+      null,
+      null,
+      true,
+      '2024-06-06 03:14:16',
+      '2024-06-06 03:14:16'
+    ]
+  },
+  sql: 'INSERT INTO `tbl_users` (`id`,`lastName`,`phone`,`role`,`photo`,`dob`,`gender`,`active`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?,?,?,?);',
+  parameters: [
+    null,
+    '8860027932',
+    2,
+    null,
+    null,
+    null,
+    true,
+    '2024-06-06 03:14:16',
+    '2024-06-06 03:14:16'
+  ]
+}
+[2024-06-06T10:14:16.376] [ERROR] default - {
+  message: "Column 'dob' cannot be null",
+  stack: 'Error\n' +
+    '    at Query.run (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)\n' +
+    '    at /Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/sequelize.js:315:28\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async MySQLQueryInterface.insert (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)\n' +
+    '    at async model.save (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:2490:35)\n' +
+    '    at async tbl_user.create (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:1362:12)\n' +
+    '    at async verifyOtp (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/api/user/controller.js:370:17)'
+}
+[2024-06-06T10:22:13.057] [ERROR] default - Error
+    at Query.run (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.insert (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)
+    at async model.save (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:2490:35)
+    at async tbl_auto_approvals.create (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:1362:12)
+    at async saveAutoApproval (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/api/phr/controller.js:26:24) {
+  name: 'SequelizeDatabaseError',
+  parent: Error: Unknown column 'createdAt' in 'field list'
+      at Packet.asError (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/packets/packet.js:728:17)
+      at Prepare.execute (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:478:34)
+      at PacketParser.onPacket (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:97:12)
+      at PacketParser.executeStart (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:104:25)
+      at Socket.emit (node:events:515:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:545:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:495:3) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'createdAt' in 'field list'",
+    sql: 'INSERT INTO `tbl_auto_approvals` (`id`,`user_id`,`abha_address`,`auto_approval_id`,`status`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?);',
+    parameters: [
+      24,
+      'bhuvansingh1993@sbx',
+      'iormmjd-eiwjdjjdie-eijdjjeed',
+      true,
+      '2024-06-06 03:22:13',
+      '2024-06-06 03:22:13'
+    ]
+  },
+  original: Error: Unknown column 'createdAt' in 'field list'
+      at Packet.asError (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/packets/packet.js:728:17)
+      at Prepare.execute (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:478:34)
+      at PacketParser.onPacket (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:97:12)
+      at PacketParser.executeStart (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:104:25)
+      at Socket.emit (node:events:515:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:545:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:495:3) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'createdAt' in 'field list'",
+    sql: 'INSERT INTO `tbl_auto_approvals` (`id`,`user_id`,`abha_address`,`auto_approval_id`,`status`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?);',
+    parameters: [
+      24,
+      'bhuvansingh1993@sbx',
+      'iormmjd-eiwjdjjdie-eijdjjeed',
+      true,
+      '2024-06-06 03:22:13',
+      '2024-06-06 03:22:13'
+    ]
+  },
+  sql: 'INSERT INTO `tbl_auto_approvals` (`id`,`user_id`,`abha_address`,`auto_approval_id`,`status`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?);',
+  parameters: [
+    24,
+    'bhuvansingh1993@sbx',
+    'iormmjd-eiwjdjjdie-eijdjjeed',
+    true,
+    '2024-06-06 03:22:13',
+    '2024-06-06 03:22:13'
+  ]
+}
+[2024-06-06T10:22:13.063] [ERROR] default - {
+  message: "Unknown column 'createdAt' in 'field list'",
+  stack: 'Error\n' +
+    '    at Query.run (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)\n' +
+    '    at /Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/sequelize.js:315:28\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async MySQLQueryInterface.insert (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)\n' +
+    '    at async model.save (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:2490:35)\n' +
+    '    at async tbl_auto_approvals.create (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:1362:12)\n' +
+    '    at async saveAutoApproval (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/api/phr/controller.js:26:24)'
+}
+[2024-06-06T10:22:34.325] [ERROR] default - Error
+    at Query.run (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.insert (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)
+    at async model.save (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:2490:35)
+    at async tbl_auto_approvals.create (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:1362:12)
+    at async saveAutoApproval (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/api/phr/controller.js:26:24) {
+  name: 'SequelizeDatabaseError',
+  parent: Error: Unknown column 'createdAt' in 'field list'
+      at Packet.asError (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/packets/packet.js:728:17)
+      at Prepare.execute (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:478:34)
+      at PacketParser.onPacket (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:97:12)
+      at PacketParser.executeStart (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:104:25)
+      at Socket.emit (node:events:515:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:545:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:495:3) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'createdAt' in 'field list'",
+    sql: 'INSERT INTO `tbl_auto_approvals` (`id`,`user_id`,`abha_address`,`auto_approval_id`,`status`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?);',
+    parameters: [
+      24,
+      'bhuvansingh1993@sbx',
+      'iormmjd-eiwjdjjdie-eijdjjeed',
+      true,
+      '2024-06-06 03:22:34',
+      '2024-06-06 03:22:34'
+    ]
+  },
+  original: Error: Unknown column 'createdAt' in 'field list'
+      at Packet.asError (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/packets/packet.js:728:17)
+      at Prepare.execute (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:478:34)
+      at PacketParser.onPacket (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:97:12)
+      at PacketParser.executeStart (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:104:25)
+      at Socket.emit (node:events:515:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:545:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:495:3) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'createdAt' in 'field list'",
+    sql: 'INSERT INTO `tbl_auto_approvals` (`id`,`user_id`,`abha_address`,`auto_approval_id`,`status`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?);',
+    parameters: [
+      24,
+      'bhuvansingh1993@sbx',
+      'iormmjd-eiwjdjjdie-eijdjjeed',
+      true,
+      '2024-06-06 03:22:34',
+      '2024-06-06 03:22:34'
+    ]
+  },
+  sql: 'INSERT INTO `tbl_auto_approvals` (`id`,`user_id`,`abha_address`,`auto_approval_id`,`status`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?);',
+  parameters: [
+    24,
+    'bhuvansingh1993@sbx',
+    'iormmjd-eiwjdjjdie-eijdjjeed',
+    true,
+    '2024-06-06 03:22:34',
+    '2024-06-06 03:22:34'
+  ]
+}
+[2024-06-06T10:22:34.327] [ERROR] default - {
+  message: "Unknown column 'createdAt' in 'field list'",
+  stack: 'Error\n' +
+    '    at Query.run (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)\n' +
+    '    at /Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/sequelize.js:315:28\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async MySQLQueryInterface.insert (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)\n' +
+    '    at async model.save (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:2490:35)\n' +
+    '    at async tbl_auto_approvals.create (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:1362:12)\n' +
+    '    at async saveAutoApproval (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/api/phr/controller.js:26:24)'
+}
+[2024-06-06T10:25:14.607] [ERROR] default - Error
+    at Query.run (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.insert (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)
+    at async model.save (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:2490:35)
+    at async tbl_auto_approvals.create (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:1362:12)
+    at async saveAutoApproval (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/api/phr/controller.js:26:24) {
+  name: 'SequelizeDatabaseError',
+  parent: Error: Unknown column 'createdAt' in 'field list'
+      at Packet.asError (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/packets/packet.js:728:17)
+      at Prepare.execute (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:478:34)
+      at PacketParser.onPacket (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:97:12)
+      at PacketParser.executeStart (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:104:25)
+      at Socket.emit (node:events:515:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:545:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:495:3) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'createdAt' in 'field list'",
+    sql: 'INSERT INTO `tbl_auto_approvals` (`id`,`user_id`,`abha_address`,`auto_approval_id`,`status`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?);',
+    parameters: [
+      24,
+      'bhuvansingh1993@sbx',
+      'iormmjd-eiwjdjjdie-eijdjjeed',
+      true,
+      '2024-06-06 03:25:14',
+      '2024-06-06 03:25:14'
+    ]
+  },
+  original: Error: Unknown column 'createdAt' in 'field list'
+      at Packet.asError (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/packets/packet.js:728:17)
+      at Prepare.execute (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:478:34)
+      at PacketParser.onPacket (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:97:12)
+      at PacketParser.executeStart (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:104:25)
+      at Socket.emit (node:events:515:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:545:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:495:3) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'createdAt' in 'field list'",
+    sql: 'INSERT INTO `tbl_auto_approvals` (`id`,`user_id`,`abha_address`,`auto_approval_id`,`status`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?);',
+    parameters: [
+      24,
+      'bhuvansingh1993@sbx',
+      'iormmjd-eiwjdjjdie-eijdjjeed',
+      true,
+      '2024-06-06 03:25:14',
+      '2024-06-06 03:25:14'
+    ]
+  },
+  sql: 'INSERT INTO `tbl_auto_approvals` (`id`,`user_id`,`abha_address`,`auto_approval_id`,`status`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?);',
+  parameters: [
+    24,
+    'bhuvansingh1993@sbx',
+    'iormmjd-eiwjdjjdie-eijdjjeed',
+    true,
+    '2024-06-06 03:25:14',
+    '2024-06-06 03:25:14'
+  ]
+}
+[2024-06-06T10:25:14.608] [ERROR] default - {
+  message: "Unknown column 'createdAt' in 'field list'",
+  stack: 'Error\n' +
+    '    at Query.run (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)\n' +
+    '    at /Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/sequelize.js:315:28\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async MySQLQueryInterface.insert (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)\n' +
+    '    at async model.save (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:2490:35)\n' +
+    '    at async tbl_auto_approvals.create (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:1362:12)\n' +
+    '    at async saveAutoApproval (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/api/phr/controller.js:26:24)'
+}
+[2024-06-06T10:26:09.286] [ERROR] default - Error
+    at Query.run (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.insert (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)
+    at async model.save (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:2490:35)
+    at async tbl_auto_approvals.create (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:1362:12)
+    at async saveAutoApproval (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/api/phr/controller.js:26:24) {
+  name: 'SequelizeDatabaseError',
+  parent: Error: Unknown column 'updatedAt' in 'field list'
+      at Packet.asError (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/packets/packet.js:728:17)
+      at Prepare.execute (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:478:34)
+      at PacketParser.onPacket (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:97:12)
+      at PacketParser.executeStart (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:104:25)
+      at Socket.emit (node:events:515:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:545:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:495:3) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'updatedAt' in 'field list'",
+    sql: 'INSERT INTO `tbl_auto_approvals` (`id`,`user_id`,`abha_address`,`auto_approval_id`,`status`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?);',
+    parameters: [
+      24,
+      'bhuvansingh1993@sbx',
+      'iormmjd-eiwjdjjdie-eijdjjeed',
+      true,
+      '2024-06-06 03:26:09',
+      '2024-06-06 03:26:09'
+    ]
+  },
+  original: Error: Unknown column 'updatedAt' in 'field list'
+      at Packet.asError (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/packets/packet.js:728:17)
+      at Prepare.execute (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:478:34)
+      at PacketParser.onPacket (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:97:12)
+      at PacketParser.executeStart (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:104:25)
+      at Socket.emit (node:events:515:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:545:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:495:3) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'updatedAt' in 'field list'",
+    sql: 'INSERT INTO `tbl_auto_approvals` (`id`,`user_id`,`abha_address`,`auto_approval_id`,`status`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?);',
+    parameters: [
+      24,
+      'bhuvansingh1993@sbx',
+      'iormmjd-eiwjdjjdie-eijdjjeed',
+      true,
+      '2024-06-06 03:26:09',
+      '2024-06-06 03:26:09'
+    ]
+  },
+  sql: 'INSERT INTO `tbl_auto_approvals` (`id`,`user_id`,`abha_address`,`auto_approval_id`,`status`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?);',
+  parameters: [
+    24,
+    'bhuvansingh1993@sbx',
+    'iormmjd-eiwjdjjdie-eijdjjeed',
+    true,
+    '2024-06-06 03:26:09',
+    '2024-06-06 03:26:09'
+  ]
+}
+[2024-06-06T10:26:09.288] [ERROR] default - {
+  message: "Unknown column 'updatedAt' in 'field list'",
+  stack: 'Error\n' +
+    '    at Query.run (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)\n' +
+    '    at /Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/sequelize.js:315:28\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async MySQLQueryInterface.insert (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)\n' +
+    '    at async model.save (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:2490:35)\n' +
+    '    at async tbl_auto_approvals.create (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:1362:12)\n' +
+    '    at async saveAutoApproval (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/api/phr/controller.js:26:24)'
+}
+[2024-06-06T10:31:32.155] [ERROR] default - Error: WHERE parameter "abha_address" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1743:13)
+    at /Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1734:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1732:35)
+    at MySQLQueryGenerator.getWhereConditions (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-generator.js:2075:19)
+    at MySQLQueryGenerator.selectQuery (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-generator.js:988:28)
+    at MySQLQueryInterface.select (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:59)
+    at tbl_auto_approvals.findAll (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:1140:47)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async tbl_auto_approvals.findOne (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:1240:12)
+[2024-06-06T10:31:32.157] [ERROR] default - {
+  message: 'WHERE parameter "abha_address" has invalid "undefined" value',
+  stack: 'Error: WHERE parameter "abha_address" has invalid "undefined" value\n' +
+    '    at MySQLQueryGenerator.whereItemQuery (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1743:13)\n' +
+    '    at /Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1734:25\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at MySQLQueryGenerator.whereItemsQuery (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1732:35)\n' +
+    '    at MySQLQueryGenerator.getWhereConditions (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-generator.js:2075:19)\n' +
+    '    at MySQLQueryGenerator.selectQuery (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-generator.js:988:28)\n' +
+    '    at MySQLQueryInterface.select (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:59)\n' +
+    '    at tbl_auto_approvals.findAll (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:1140:47)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async tbl_auto_approvals.findOne (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:1240:12)'
+}
+[2024-06-06T10:34:10.184] [ERROR] default - Error: WHERE parameter "abha_address" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1743:13)
+    at /Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1734:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1732:35)
+    at MySQLQueryGenerator.getWhereConditions (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-generator.js:2075:19)
+    at MySQLQueryGenerator.selectQuery (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-generator.js:988:28)
+    at MySQLQueryInterface.select (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:59)
+    at tbl_auto_approvals.findAll (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:1140:47)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async tbl_auto_approvals.findOne (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:1240:12)
+[2024-06-06T10:34:10.185] [ERROR] default - {
+  message: 'WHERE parameter "abha_address" has invalid "undefined" value',
+  stack: 'Error: WHERE parameter "abha_address" has invalid "undefined" value\n' +
+    '    at MySQLQueryGenerator.whereItemQuery (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1743:13)\n' +
+    '    at /Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1734:25\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at MySQLQueryGenerator.whereItemsQuery (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1732:35)\n' +
+    '    at MySQLQueryGenerator.getWhereConditions (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-generator.js:2075:19)\n' +
+    '    at MySQLQueryGenerator.selectQuery (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-generator.js:988:28)\n' +
+    '    at MySQLQueryInterface.select (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:59)\n' +
+    '    at tbl_auto_approvals.findAll (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:1140:47)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async tbl_auto_approvals.findOne (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:1240:12)'
+}
+[2024-06-06T10:34:24.544] [ERROR] default - Error: WHERE parameter "abha_address" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1743:13)
+    at /Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1734:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1732:35)
+    at MySQLQueryGenerator.getWhereConditions (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-generator.js:2075:19)
+    at MySQLQueryGenerator.selectQuery (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-generator.js:988:28)
+    at MySQLQueryInterface.select (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:59)
+    at tbl_auto_approvals.findAll (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:1140:47)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async tbl_auto_approvals.findOne (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:1240:12)
+[2024-06-06T10:34:24.544] [ERROR] default - {
+  message: 'WHERE parameter "abha_address" has invalid "undefined" value',
+  stack: 'Error: WHERE parameter "abha_address" has invalid "undefined" value\n' +
+    '    at MySQLQueryGenerator.whereItemQuery (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1743:13)\n' +
+    '    at /Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1734:25\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at MySQLQueryGenerator.whereItemsQuery (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1732:35)\n' +
+    '    at MySQLQueryGenerator.getWhereConditions (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-generator.js:2075:19)\n' +
+    '    at MySQLQueryGenerator.selectQuery (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-generator.js:988:28)\n' +
+    '    at MySQLQueryInterface.select (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:59)\n' +
+    '    at tbl_auto_approvals.findAll (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:1140:47)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async tbl_auto_approvals.findOne (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:1240:12)'
+}
+[2024-06-06T10:34:46.468] [ERROR] default - Error: WHERE parameter "abha_address" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1743:13)
+    at /Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1734:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1732:35)
+    at MySQLQueryGenerator.getWhereConditions (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-generator.js:2075:19)
+    at MySQLQueryGenerator.selectQuery (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-generator.js:988:28)
+    at MySQLQueryInterface.select (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:59)
+    at tbl_auto_approvals.findAll (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:1140:47)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async tbl_auto_approvals.findOne (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:1240:12)
+[2024-06-06T10:34:46.469] [ERROR] default - {
+  message: 'WHERE parameter "abha_address" has invalid "undefined" value',
+  stack: 'Error: WHERE parameter "abha_address" has invalid "undefined" value\n' +
+    '    at MySQLQueryGenerator.whereItemQuery (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1743:13)\n' +
+    '    at /Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1734:25\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at MySQLQueryGenerator.whereItemsQuery (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1732:35)\n' +
+    '    at MySQLQueryGenerator.getWhereConditions (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-generator.js:2075:19)\n' +
+    '    at MySQLQueryGenerator.selectQuery (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-generator.js:988:28)\n' +
+    '    at MySQLQueryInterface.select (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:59)\n' +
+    '    at tbl_auto_approvals.findAll (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:1140:47)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async tbl_auto_approvals.findOne (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:1240:12)'
+}
+[2024-06-06T10:42:57.072] [ERROR] default - AssertionError [ERR_ASSERTION]: Missing where attribute in the options parameter
+    at tbl_auto_approvals._optionsMustContainWhere (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:2130:5)
+    at tbl_auto_approvals.update (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:1896:10)
+    at updateAutoApprovalStatus (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/api/phr/controller.js:50:49)
+    at Layer.handle [as handle_request] (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/express/lib/router/route.js:144:13)
+    at next (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/composable-middleware/lib/composable-middleware.js:41:9)
+    at Middleware_Common_Object.<anonymous> (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/middleware/authorization.js:48:17)
+    at next (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/composable-middleware/lib/composable-middleware.js:60:18)
+    at Middleware_Common_Object.verifyAuthentication (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/middleware/authorization.js:36:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: undefined,
+  expected: true,
+  operator: '=='
+}
+[2024-06-06T10:42:57.076] [ERROR] default - {
+  message: 'Missing where attribute in the options parameter',
+  stack: 'AssertionError [ERR_ASSERTION]: Missing where attribute in the options parameter\n' +
+    '    at tbl_auto_approvals._optionsMustContainWhere (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:2130:5)\n' +
+    '    at tbl_auto_approvals.update (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:1896:10)\n' +
+    '    at updateAutoApprovalStatus (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/api/phr/controller.js:50:49)\n' +
+    '    at Layer.handle [as handle_request] (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at next (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/express/lib/router/route.js:144:13)\n' +
+    '    at next (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/composable-middleware/lib/composable-middleware.js:41:9)\n' +
+    '    at Middleware_Common_Object.<anonymous> (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/middleware/authorization.js:48:17)\n' +
+    '    at next (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/composable-middleware/lib/composable-middleware.js:60:18)\n' +
+    '    at Middleware_Common_Object.verifyAuthentication (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/middleware/authorization.js:36:9)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)'
+}
+[2024-06-06T10:52:20.601] [ERROR] default - Error
+    at Query.run (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.insert (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)
+    at async model.save (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:2490:35)
+    at async tbl_subscriptions.create (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:1362:12)
+    at async saveSubscription (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/api/phr/controller.js:94:24) {
+  name: 'SequelizeDatabaseError',
+  parent: Error: Unknown column 'createdAt' in 'field list'
+      at Packet.asError (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/packets/packet.js:728:17)
+      at Prepare.execute (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:478:34)
+      at PacketParser.onPacket (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:97:12)
+      at PacketParser.executeStart (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:104:25)
+      at Socket.emit (node:events:515:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:545:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:495:3) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'createdAt' in 'field list'",
+    sql: 'INSERT INTO `tbl_subscriptions` (`id`,`user_id`,`abha_address`,`subscription_id`,`status`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?);',
+    parameters: [
+      24,
+      'bhuvansingh1993@sbx',
+      'iiduue-uiejjdjd-ueidjjd',
+      true,
+      '2024-06-06 03:52:20',
+      '2024-06-06 03:52:20'
+    ]
+  },
+  original: Error: Unknown column 'createdAt' in 'field list'
+      at Packet.asError (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/packets/packet.js:728:17)
+      at Prepare.execute (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:478:34)
+      at PacketParser.onPacket (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:97:12)
+      at PacketParser.executeStart (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:104:25)
+      at Socket.emit (node:events:515:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:545:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:495:3) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'createdAt' in 'field list'",
+    sql: 'INSERT INTO `tbl_subscriptions` (`id`,`user_id`,`abha_address`,`subscription_id`,`status`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?);',
+    parameters: [
+      24,
+      'bhuvansingh1993@sbx',
+      'iiduue-uiejjdjd-ueidjjd',
+      true,
+      '2024-06-06 03:52:20',
+      '2024-06-06 03:52:20'
+    ]
+  },
+  sql: 'INSERT INTO `tbl_subscriptions` (`id`,`user_id`,`abha_address`,`subscription_id`,`status`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?);',
+  parameters: [
+    24,
+    'bhuvansingh1993@sbx',
+    'iiduue-uiejjdjd-ueidjjd',
+    true,
+    '2024-06-06 03:52:20',
+    '2024-06-06 03:52:20'
+  ]
+}
+[2024-06-06T10:52:20.604] [ERROR] default - {
+  message: "Unknown column 'createdAt' in 'field list'",
+  stack: 'Error\n' +
+    '    at Query.run (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)\n' +
+    '    at /Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/sequelize.js:315:28\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async MySQLQueryInterface.insert (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)\n' +
+    '    at async model.save (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:2490:35)\n' +
+    '    at async tbl_subscriptions.create (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:1362:12)\n' +
+    '    at async saveSubscription (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/api/phr/controller.js:94:24)'
+}
+[2024-06-06T10:53:49.333] [ERROR] default - Error: WHERE parameter "abha_address" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1743:13)
+    at /Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1734:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1732:35)
+    at MySQLQueryGenerator.getWhereConditions (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-generator.js:2075:19)
+    at MySQLQueryGenerator.selectQuery (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-generator.js:988:28)
+    at MySQLQueryInterface.select (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:59)
+    at tbl_subscriptions.findAll (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:1140:47)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async tbl_subscriptions.findOne (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:1240:12)
+[2024-06-06T10:53:49.335] [ERROR] default - {
+  message: 'WHERE parameter "abha_address" has invalid "undefined" value',
+  stack: 'Error: WHERE parameter "abha_address" has invalid "undefined" value\n' +
+    '    at MySQLQueryGenerator.whereItemQuery (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1743:13)\n' +
+    '    at /Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1734:25\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at MySQLQueryGenerator.whereItemsQuery (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1732:35)\n' +
+    '    at MySQLQueryGenerator.getWhereConditions (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-generator.js:2075:19)\n' +
+    '    at MySQLQueryGenerator.selectQuery (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-generator.js:988:28)\n' +
+    '    at MySQLQueryInterface.select (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:59)\n' +
+    '    at tbl_subscriptions.findAll (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:1140:47)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async tbl_subscriptions.findOne (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:1240:12)'
+}
+[2024-06-06T10:58:07.207] [ERROR] default - Error
+    at Query.run (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.insert (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)
+    at async model.save (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:2490:35)
+    at async tbl_linked_care_contexts.create (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:1362:12)
+    at async saveCareContext (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/api/phr/controller.js:160:23) {
+  name: 'SequelizeDatabaseError',
+  parent: Error: Unknown column 'createdAt' in 'field list'
+      at Packet.asError (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/packets/packet.js:728:17)
+      at Prepare.execute (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:478:34)
+      at PacketParser.onPacket (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:97:12)
+      at PacketParser.executeStart (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:104:25)
+      at Socket.emit (node:events:515:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:545:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:495:3) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'createdAt' in 'field list'",
+    sql: 'INSERT INTO `tbl_linked_care_contexts` (`id`,`user_id`,`abha_address`,`facility_id`,`facility_name`,`care_context_reference`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?,?);',
+    parameters: [
+      24,
+      'bhuvansingh1993@sbx',
+      'sehat-demo-hospital',
+      'Sehat Demo Hospital',
+      'Blood Reports',
+      '2024-06-06 03:58:07',
+      '2024-06-06 03:58:07'
+    ]
+  },
+  original: Error: Unknown column 'createdAt' in 'field list'
+      at Packet.asError (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/packets/packet.js:728:17)
+      at Prepare.execute (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:478:34)
+      at PacketParser.onPacket (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:97:12)
+      at PacketParser.executeStart (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:104:25)
+      at Socket.emit (node:events:515:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:545:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:495:3) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'createdAt' in 'field list'",
+    sql: 'INSERT INTO `tbl_linked_care_contexts` (`id`,`user_id`,`abha_address`,`facility_id`,`facility_name`,`care_context_reference`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?,?);',
+    parameters: [
+      24,
+      'bhuvansingh1993@sbx',
+      'sehat-demo-hospital',
+      'Sehat Demo Hospital',
+      'Blood Reports',
+      '2024-06-06 03:58:07',
+      '2024-06-06 03:58:07'
+    ]
+  },
+  sql: 'INSERT INTO `tbl_linked_care_contexts` (`id`,`user_id`,`abha_address`,`facility_id`,`facility_name`,`care_context_reference`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?,?);',
+  parameters: [
+    24,
+    'bhuvansingh1993@sbx',
+    'sehat-demo-hospital',
+    'Sehat Demo Hospital',
+    'Blood Reports',
+    '2024-06-06 03:58:07',
+    '2024-06-06 03:58:07'
+  ]
+}
+[2024-06-06T10:58:07.213] [ERROR] default - {
+  message: "Unknown column 'createdAt' in 'field list'",
+  stack: 'Error\n' +
+    '    at Query.run (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)\n' +
+    '    at /Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/sequelize.js:315:28\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async MySQLQueryInterface.insert (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)\n' +
+    '    at async model.save (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:2490:35)\n' +
+    '    at async tbl_linked_care_contexts.create (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:1362:12)\n' +
+    '    at async saveCareContext (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/api/phr/controller.js:160:23)'
+}
+[2024-06-06T10:58:38.111] [ERROR] default - Error
+    at Query.run (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.insert (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)
+    at async model.save (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:2490:35)
+    at async tbl_linked_care_contexts.create (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:1362:12)
+    at async saveCareContext (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/api/phr/controller.js:160:23) {
+  name: 'SequelizeDatabaseError',
+  parent: Error: Unknown column 'createdAt' in 'field list'
+      at Packet.asError (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/packets/packet.js:728:17)
+      at Prepare.execute (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:478:34)
+      at PacketParser.onPacket (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:97:12)
+      at PacketParser.executeStart (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:104:25)
+      at Socket.emit (node:events:515:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:545:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:495:3) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'createdAt' in 'field list'",
+    sql: 'INSERT INTO `tbl_linked_care_contexts` (`id`,`user_id`,`abha_address`,`facility_id`,`facility_name`,`care_context_reference`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?,?);',
+    parameters: [
+      24,
+      'bhuvansingh1993@sbx',
+      'sehat-demo-hospital',
+      'Sehat Demo Hospital',
+      'Blood Reports',
+      '2024-06-06 03:58:38',
+      '2024-06-06 03:58:38'
+    ]
+  },
+  original: Error: Unknown column 'createdAt' in 'field list'
+      at Packet.asError (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/packets/packet.js:728:17)
+      at Prepare.execute (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:478:34)
+      at PacketParser.onPacket (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:97:12)
+      at PacketParser.executeStart (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/mysql2/lib/connection.js:104:25)
+      at Socket.emit (node:events:515:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:545:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:495:3) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'createdAt' in 'field list'",
+    sql: 'INSERT INTO `tbl_linked_care_contexts` (`id`,`user_id`,`abha_address`,`facility_id`,`facility_name`,`care_context_reference`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?,?);',
+    parameters: [
+      24,
+      'bhuvansingh1993@sbx',
+      'sehat-demo-hospital',
+      'Sehat Demo Hospital',
+      'Blood Reports',
+      '2024-06-06 03:58:38',
+      '2024-06-06 03:58:38'
+    ]
+  },
+  sql: 'INSERT INTO `tbl_linked_care_contexts` (`id`,`user_id`,`abha_address`,`facility_id`,`facility_name`,`care_context_reference`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?,?);',
+  parameters: [
+    24,
+    'bhuvansingh1993@sbx',
+    'sehat-demo-hospital',
+    'Sehat Demo Hospital',
+    'Blood Reports',
+    '2024-06-06 03:58:38',
+    '2024-06-06 03:58:38'
+  ]
+}
+[2024-06-06T10:58:38.111] [ERROR] default - {
+  message: "Unknown column 'createdAt' in 'field list'",
+  stack: 'Error\n' +
+    '    at Query.run (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)\n' +
+    '    at /Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/sequelize.js:315:28\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async MySQLQueryInterface.insert (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)\n' +
+    '    at async model.save (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:2490:35)\n' +
+    '    at async tbl_linked_care_contexts.create (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/sequelize/lib/model.js:1362:12)\n' +
+    '    at async saveCareContext (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/api/phr/controller.js:160:23)'
+}
+[2024-06-06T11:06:21.330] [ERROR] default - TypeError: LinkedCareContextsModel.find is not a function
+    at getCareContexts (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/api/phr/controller.js:174:58)
+    at Layer.handle [as handle_request] (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/express/lib/router/route.js:144:13)
+    at next (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/composable-middleware/lib/composable-middleware.js:41:9)
+    at Middleware_Common_Object.<anonymous> (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/middleware/authorization.js:48:17)
+    at next (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/composable-middleware/lib/composable-middleware.js:60:18)
+    at Middleware_Common_Object.verifyAuthentication (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/middleware/authorization.js:36:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2024-06-06T11:06:21.331] [ERROR] default - {
+  message: 'LinkedCareContextsModel.find is not a function',
+  stack: 'TypeError: LinkedCareContextsModel.find is not a function\n' +
+    '    at getCareContexts (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/api/phr/controller.js:174:58)\n' +
+    '    at Layer.handle [as handle_request] (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at next (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/express/lib/router/route.js:144:13)\n' +
+    '    at next (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/composable-middleware/lib/composable-middleware.js:41:9)\n' +
+    '    at Middleware_Common_Object.<anonymous> (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/middleware/authorization.js:48:17)\n' +
+    '    at next (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/composable-middleware/lib/composable-middleware.js:60:18)\n' +
+    '    at Middleware_Common_Object.verifyAuthentication (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/middleware/authorization.js:36:9)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)'
+}
+[2024-06-06T11:12:31.443] [ERROR] default - Error: The array type does not allow arguments
+    at new module.exports (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/@hapi/hoek/lib/error.js:23:19)
+    at module.exports (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/@hapi/hoek/lib/assert.js:21:11)
+    at root.<computed> [as array] (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/joi/lib/index.js:57:13)
+    at saveCareContext (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/api/phr/controller.js:147:28)
+    at Layer.handle [as handle_request] (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/express/lib/router/route.js:144:13)
+    at next (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/composable-middleware/lib/composable-middleware.js:41:9)
+    at Middleware_Common_Object.<anonymous> (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/middleware/authorization.js:48:17)
+    at next (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/composable-middleware/lib/composable-middleware.js:60:18)
+    at Middleware_Common_Object.verifyAuthentication (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/middleware/authorization.js:36:9)
+[2024-06-06T11:12:31.444] [ERROR] default - {
+  message: 'The array type does not allow arguments',
+  stack: 'Error: The array type does not allow arguments\n' +
+    '    at new module.exports (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/@hapi/hoek/lib/error.js:23:19)\n' +
+    '    at module.exports (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/@hapi/hoek/lib/assert.js:21:11)\n' +
+    '    at root.<computed> [as array] (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/joi/lib/index.js:57:13)\n' +
+    '    at saveCareContext (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/api/phr/controller.js:147:28)\n' +
+    '    at Layer.handle [as handle_request] (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at next (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/express/lib/router/route.js:144:13)\n' +
+    '    at next (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/composable-middleware/lib/composable-middleware.js:41:9)\n' +
+    '    at Middleware_Common_Object.<anonymous> (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/middleware/authorization.js:48:17)\n' +
+    '    at next (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/composable-middleware/lib/composable-middleware.js:60:18)\n' +
+    '    at Middleware_Common_Object.verifyAuthentication (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/middleware/authorization.js:36:9)'
+}
+[2024-06-06T11:15:05.087] [ERROR] default - TypeError: Joi.validate is not a function
+    at saveCareContext (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/api/phr/controller.js:157:31)
+    at Layer.handle [as handle_request] (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/express/lib/router/route.js:144:13)
+    at next (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/composable-middleware/lib/composable-middleware.js:41:9)
+    at Middleware_Common_Object.<anonymous> (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/middleware/authorization.js:48:17)
+    at next (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/composable-middleware/lib/composable-middleware.js:60:18)
+    at Middleware_Common_Object.verifyAuthentication (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/middleware/authorization.js:36:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2024-06-06T11:15:05.088] [ERROR] default - {
+  message: 'Joi.validate is not a function',
+  stack: 'TypeError: Joi.validate is not a function\n' +
+    '    at saveCareContext (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/api/phr/controller.js:157:31)\n' +
+    '    at Layer.handle [as handle_request] (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/express/lib/router/layer.js:95:5)\n' +
+    '    at next (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/express/lib/router/route.js:144:13)\n' +
+    '    at next (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/composable-middleware/lib/composable-middleware.js:41:9)\n' +
+    '    at Middleware_Common_Object.<anonymous> (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/middleware/authorization.js:48:17)\n' +
+    '    at next (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/node_modules/composable-middleware/lib/composable-middleware.js:60:18)\n' +
+    '    at Middleware_Common_Object.verifyAuthentication (/Users/bhuvansingh/Desktop/PROJECTS/Sehat Connect API/middleware/authorization.js:36:9)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)'
+}
+[2024-06-06T13:22:50.258] [ERROR] default - Error
+    at Query.run (/home/ubuntu/app/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /home/ubuntu/app/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.insert (/home/ubuntu/app/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)
+    at async model.save (/home/ubuntu/app/node_modules/sequelize/lib/model.js:2490:35)
+    at async tbl_community_post.create (/home/ubuntu/app/node_modules/sequelize/lib/model.js:1362:12)
+    at async createPost (/home/ubuntu/app/api/community/controller.js:371:21) {
+  name: 'SequelizeDatabaseError',
+  parent: Error: Field 'createdBy' doesn't have a default value
+      at Packet.asError (/home/ubuntu/app/node_modules/mysql2/lib/packets/packet.js:728:17)
+      at Execute.execute (/home/ubuntu/app/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:478:34)
+      at PacketParser.onPacket (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:97:12)
+      at PacketParser.executeStart (/home/ubuntu/app/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:104:25)
+      at Socket.emit (node:events:515:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:545:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:495:3) {
+    code: 'ER_NO_DEFAULT_FOR_FIELD',
+    errno: 1364,
+    sqlState: 'HY000',
+    sqlMessage: "Field 'createdBy' doesn't have a default value",
+    sql: 'INSERT INTO `tbl_community_posts` (`id`,`message`,`userId`,`communityId`,`active`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?);',
+    parameters: [
+      'Post June 6, 2024',
+      7,
+      '1',
+      true,
+      '2024-06-06 13:22:50',
+      '2024-06-06 13:22:50'
+    ]
+  },
+  original: Error: Field 'createdBy' doesn't have a default value
+      at Packet.asError (/home/ubuntu/app/node_modules/mysql2/lib/packets/packet.js:728:17)
+      at Execute.execute (/home/ubuntu/app/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:478:34)
+      at PacketParser.onPacket (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:97:12)
+      at PacketParser.executeStart (/home/ubuntu/app/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:104:25)
+      at Socket.emit (node:events:515:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:545:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:495:3) {
+    code: 'ER_NO_DEFAULT_FOR_FIELD',
+    errno: 1364,
+    sqlState: 'HY000',
+    sqlMessage: "Field 'createdBy' doesn't have a default value",
+    sql: 'INSERT INTO `tbl_community_posts` (`id`,`message`,`userId`,`communityId`,`active`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?);',
+    parameters: [
+      'Post June 6, 2024',
+      7,
+      '1',
+      true,
+      '2024-06-06 13:22:50',
+      '2024-06-06 13:22:50'
+    ]
+  },
+  sql: 'INSERT INTO `tbl_community_posts` (`id`,`message`,`userId`,`communityId`,`active`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?);',
+  parameters: [
+    'Post June 6, 2024',
+    7,
+    '1',
+    true,
+    '2024-06-06 13:22:50',
+    '2024-06-06 13:22:50'
+  ]
+}
+[2024-06-06T13:22:50.263] [ERROR] default - {
+  message: "Field 'createdBy' doesn't have a default value",
+  stack: 'Error\n' +
+    '    at Query.run (/home/ubuntu/app/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)\n' +
+    '    at /home/ubuntu/app/node_modules/sequelize/lib/sequelize.js:315:28\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async MySQLQueryInterface.insert (/home/ubuntu/app/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)\n' +
+    '    at async model.save (/home/ubuntu/app/node_modules/sequelize/lib/model.js:2490:35)\n' +
+    '    at async tbl_community_post.create (/home/ubuntu/app/node_modules/sequelize/lib/model.js:1362:12)\n' +
+    '    at async createPost (/home/ubuntu/app/api/community/controller.js:371:21)'
+}
+[2024-06-06T13:22:54.917] [ERROR] default - Error
+    at Query.run (/home/ubuntu/app/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /home/ubuntu/app/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.insert (/home/ubuntu/app/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)
+    at async model.save (/home/ubuntu/app/node_modules/sequelize/lib/model.js:2490:35)
+    at async tbl_community_post.create (/home/ubuntu/app/node_modules/sequelize/lib/model.js:1362:12)
+    at async createPost (/home/ubuntu/app/api/community/controller.js:371:21) {
+  name: 'SequelizeDatabaseError',
+  parent: Error: Field 'createdBy' doesn't have a default value
+      at Packet.asError (/home/ubuntu/app/node_modules/mysql2/lib/packets/packet.js:728:17)
+      at Execute.execute (/home/ubuntu/app/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:478:34)
+      at PacketParser.onPacket (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:97:12)
+      at PacketParser.executeStart (/home/ubuntu/app/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:104:25)
+      at Socket.emit (node:events:515:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:545:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:495:3) {
+    code: 'ER_NO_DEFAULT_FOR_FIELD',
+    errno: 1364,
+    sqlState: 'HY000',
+    sqlMessage: "Field 'createdBy' doesn't have a default value",
+    sql: 'INSERT INTO `tbl_community_posts` (`id`,`message`,`userId`,`communityId`,`active`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?);',
+    parameters: [
+      'Post June 6, 2024',
+      7,
+      '1',
+      true,
+      '2024-06-06 13:22:54',
+      '2024-06-06 13:22:54'
+    ]
+  },
+  original: Error: Field 'createdBy' doesn't have a default value
+      at Packet.asError (/home/ubuntu/app/node_modules/mysql2/lib/packets/packet.js:728:17)
+      at Execute.execute (/home/ubuntu/app/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:478:34)
+      at PacketParser.onPacket (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:97:12)
+      at PacketParser.executeStart (/home/ubuntu/app/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:104:25)
+      at Socket.emit (node:events:515:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:545:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:495:3) {
+    code: 'ER_NO_DEFAULT_FOR_FIELD',
+    errno: 1364,
+    sqlState: 'HY000',
+    sqlMessage: "Field 'createdBy' doesn't have a default value",
+    sql: 'INSERT INTO `tbl_community_posts` (`id`,`message`,`userId`,`communityId`,`active`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?);',
+    parameters: [
+      'Post June 6, 2024',
+      7,
+      '1',
+      true,
+      '2024-06-06 13:22:54',
+      '2024-06-06 13:22:54'
+    ]
+  },
+  sql: 'INSERT INTO `tbl_community_posts` (`id`,`message`,`userId`,`communityId`,`active`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?);',
+  parameters: [
+    'Post June 6, 2024',
+    7,
+    '1',
+    true,
+    '2024-06-06 13:22:54',
+    '2024-06-06 13:22:54'
+  ]
+}
+[2024-06-06T13:22:54.919] [ERROR] default - {
+  message: "Field 'createdBy' doesn't have a default value",
+  stack: 'Error\n' +
+    '    at Query.run (/home/ubuntu/app/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)\n' +
+    '    at /home/ubuntu/app/node_modules/sequelize/lib/sequelize.js:315:28\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async MySQLQueryInterface.insert (/home/ubuntu/app/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)\n' +
+    '    at async model.save (/home/ubuntu/app/node_modules/sequelize/lib/model.js:2490:35)\n' +
+    '    at async tbl_community_post.create (/home/ubuntu/app/node_modules/sequelize/lib/model.js:1362:12)\n' +
+    '    at async createPost (/home/ubuntu/app/api/community/controller.js:371:21)'
+}
+[2024-06-06T13:23:02.616] [ERROR] default - Error
+    at Query.run (/home/ubuntu/app/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /home/ubuntu/app/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.insert (/home/ubuntu/app/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)
+    at async model.save (/home/ubuntu/app/node_modules/sequelize/lib/model.js:2490:35)
+    at async tbl_community_post.create (/home/ubuntu/app/node_modules/sequelize/lib/model.js:1362:12)
+    at async createPost (/home/ubuntu/app/api/community/controller.js:371:21) {
+  name: 'SequelizeDatabaseError',
+  parent: Error: Field 'createdBy' doesn't have a default value
+      at Packet.asError (/home/ubuntu/app/node_modules/mysql2/lib/packets/packet.js:728:17)
+      at Execute.execute (/home/ubuntu/app/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:478:34)
+      at PacketParser.onPacket (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:97:12)
+      at PacketParser.executeStart (/home/ubuntu/app/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:104:25)
+      at Socket.emit (node:events:515:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:545:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:495:3) {
+    code: 'ER_NO_DEFAULT_FOR_FIELD',
+    errno: 1364,
+    sqlState: 'HY000',
+    sqlMessage: "Field 'createdBy' doesn't have a default value",
+    sql: 'INSERT INTO `tbl_community_posts` (`id`,`message`,`userId`,`communityId`,`active`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?);',
+    parameters: [
+      'Post June 6, 2024',
+      7,
+      '1',
+      true,
+      '2024-06-06 13:23:02',
+      '2024-06-06 13:23:02'
+    ]
+  },
+  original: Error: Field 'createdBy' doesn't have a default value
+      at Packet.asError (/home/ubuntu/app/node_modules/mysql2/lib/packets/packet.js:728:17)
+      at Execute.execute (/home/ubuntu/app/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:478:34)
+      at PacketParser.onPacket (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:97:12)
+      at PacketParser.executeStart (/home/ubuntu/app/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:104:25)
+      at Socket.emit (node:events:515:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:545:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:495:3) {
+    code: 'ER_NO_DEFAULT_FOR_FIELD',
+    errno: 1364,
+    sqlState: 'HY000',
+    sqlMessage: "Field 'createdBy' doesn't have a default value",
+    sql: 'INSERT INTO `tbl_community_posts` (`id`,`message`,`userId`,`communityId`,`active`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?);',
+    parameters: [
+      'Post June 6, 2024',
+      7,
+      '1',
+      true,
+      '2024-06-06 13:23:02',
+      '2024-06-06 13:23:02'
+    ]
+  },
+  sql: 'INSERT INTO `tbl_community_posts` (`id`,`message`,`userId`,`communityId`,`active`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?);',
+  parameters: [
+    'Post June 6, 2024',
+    7,
+    '1',
+    true,
+    '2024-06-06 13:23:02',
+    '2024-06-06 13:23:02'
+  ]
+}
+[2024-06-06T13:23:02.620] [ERROR] default - {
+  message: "Field 'createdBy' doesn't have a default value",
+  stack: 'Error\n' +
+    '    at Query.run (/home/ubuntu/app/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)\n' +
+    '    at /home/ubuntu/app/node_modules/sequelize/lib/sequelize.js:315:28\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async MySQLQueryInterface.insert (/home/ubuntu/app/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)\n' +
+    '    at async model.save (/home/ubuntu/app/node_modules/sequelize/lib/model.js:2490:35)\n' +
+    '    at async tbl_community_post.create (/home/ubuntu/app/node_modules/sequelize/lib/model.js:1362:12)\n' +
+    '    at async createPost (/home/ubuntu/app/api/community/controller.js:371:21)'
+}
+[2024-06-06T13:23:13.707] [ERROR] default - Error
+    at Query.run (/home/ubuntu/app/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /home/ubuntu/app/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.insert (/home/ubuntu/app/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)
+    at async model.save (/home/ubuntu/app/node_modules/sequelize/lib/model.js:2490:35)
+    at async tbl_community_post.create (/home/ubuntu/app/node_modules/sequelize/lib/model.js:1362:12)
+    at async createPost (/home/ubuntu/app/api/community/controller.js:371:21) {
+  name: 'SequelizeDatabaseError',
+  parent: Error: Field 'createdBy' doesn't have a default value
+      at Packet.asError (/home/ubuntu/app/node_modules/mysql2/lib/packets/packet.js:728:17)
+      at Execute.execute (/home/ubuntu/app/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:478:34)
+      at PacketParser.onPacket (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:97:12)
+      at PacketParser.executeStart (/home/ubuntu/app/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:104:25)
+      at Socket.emit (node:events:515:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:545:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:495:3) {
+    code: 'ER_NO_DEFAULT_FOR_FIELD',
+    errno: 1364,
+    sqlState: 'HY000',
+    sqlMessage: "Field 'createdBy' doesn't have a default value",
+    sql: 'INSERT INTO `tbl_community_posts` (`id`,`message`,`userId`,`communityId`,`active`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?);',
+    parameters: [
+      'June 6th, Post - Vimanyu Saxena ',
+      7,
+      '1',
+      true,
+      '2024-06-06 13:23:13',
+      '2024-06-06 13:23:13'
+    ]
+  },
+  original: Error: Field 'createdBy' doesn't have a default value
+      at Packet.asError (/home/ubuntu/app/node_modules/mysql2/lib/packets/packet.js:728:17)
+      at Execute.execute (/home/ubuntu/app/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:478:34)
+      at PacketParser.onPacket (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:97:12)
+      at PacketParser.executeStart (/home/ubuntu/app/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:104:25)
+      at Socket.emit (node:events:515:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:545:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:495:3) {
+    code: 'ER_NO_DEFAULT_FOR_FIELD',
+    errno: 1364,
+    sqlState: 'HY000',
+    sqlMessage: "Field 'createdBy' doesn't have a default value",
+    sql: 'INSERT INTO `tbl_community_posts` (`id`,`message`,`userId`,`communityId`,`active`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?);',
+    parameters: [
+      'June 6th, Post - Vimanyu Saxena ',
+      7,
+      '1',
+      true,
+      '2024-06-06 13:23:13',
+      '2024-06-06 13:23:13'
+    ]
+  },
+  sql: 'INSERT INTO `tbl_community_posts` (`id`,`message`,`userId`,`communityId`,`active`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?);',
+  parameters: [
+    'June 6th, Post - Vimanyu Saxena ',
+    7,
+    '1',
+    true,
+    '2024-06-06 13:23:13',
+    '2024-06-06 13:23:13'
+  ]
+}
+[2024-06-06T13:23:13.708] [ERROR] default - {
+  message: "Field 'createdBy' doesn't have a default value",
+  stack: 'Error\n' +
+    '    at Query.run (/home/ubuntu/app/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)\n' +
+    '    at /home/ubuntu/app/node_modules/sequelize/lib/sequelize.js:315:28\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async MySQLQueryInterface.insert (/home/ubuntu/app/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)\n' +
+    '    at async model.save (/home/ubuntu/app/node_modules/sequelize/lib/model.js:2490:35)\n' +
+    '    at async tbl_community_post.create (/home/ubuntu/app/node_modules/sequelize/lib/model.js:1362:12)\n' +
+    '    at async createPost (/home/ubuntu/app/api/community/controller.js:371:21)'
+}
+[2024-06-06T13:24:33.949] [ERROR] default - Error
+    at Query.run (/home/ubuntu/app/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /home/ubuntu/app/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.insert (/home/ubuntu/app/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)
+    at async model.save (/home/ubuntu/app/node_modules/sequelize/lib/model.js:2490:35)
+    at async tbl_community_post.create (/home/ubuntu/app/node_modules/sequelize/lib/model.js:1362:12)
+    at async createPost (/home/ubuntu/app/api/community/controller.js:371:21) {
+  name: 'SequelizeDatabaseError',
+  parent: Error: Field 'createdBy' doesn't have a default value
+      at Packet.asError (/home/ubuntu/app/node_modules/mysql2/lib/packets/packet.js:728:17)
+      at Execute.execute (/home/ubuntu/app/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:478:34)
+      at PacketParser.onPacket (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:97:12)
+      at PacketParser.executeStart (/home/ubuntu/app/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:104:25)
+      at Socket.emit (node:events:515:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:545:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:495:3) {
+    code: 'ER_NO_DEFAULT_FOR_FIELD',
+    errno: 1364,
+    sqlState: 'HY000',
+    sqlMessage: "Field 'createdBy' doesn't have a default value",
+    sql: 'INSERT INTO `tbl_community_posts` (`id`,`message`,`userId`,`communityId`,`active`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?);',
+    parameters: [
+      'June 6th, Post - Vimanyu Saxena ',
+      7,
+      '1',
+      true,
+      '2024-06-06 13:24:33',
+      '2024-06-06 13:24:33'
+    ]
+  },
+  original: Error: Field 'createdBy' doesn't have a default value
+      at Packet.asError (/home/ubuntu/app/node_modules/mysql2/lib/packets/packet.js:728:17)
+      at Execute.execute (/home/ubuntu/app/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:478:34)
+      at PacketParser.onPacket (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:97:12)
+      at PacketParser.executeStart (/home/ubuntu/app/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:104:25)
+      at Socket.emit (node:events:515:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:545:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:495:3) {
+    code: 'ER_NO_DEFAULT_FOR_FIELD',
+    errno: 1364,
+    sqlState: 'HY000',
+    sqlMessage: "Field 'createdBy' doesn't have a default value",
+    sql: 'INSERT INTO `tbl_community_posts` (`id`,`message`,`userId`,`communityId`,`active`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?);',
+    parameters: [
+      'June 6th, Post - Vimanyu Saxena ',
+      7,
+      '1',
+      true,
+      '2024-06-06 13:24:33',
+      '2024-06-06 13:24:33'
+    ]
+  },
+  sql: 'INSERT INTO `tbl_community_posts` (`id`,`message`,`userId`,`communityId`,`active`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?);',
+  parameters: [
+    'June 6th, Post - Vimanyu Saxena ',
+    7,
+    '1',
+    true,
+    '2024-06-06 13:24:33',
+    '2024-06-06 13:24:33'
+  ]
+}
+[2024-06-06T13:24:33.950] [ERROR] default - {
+  message: "Field 'createdBy' doesn't have a default value",
+  stack: 'Error\n' +
+    '    at Query.run (/home/ubuntu/app/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)\n' +
+    '    at /home/ubuntu/app/node_modules/sequelize/lib/sequelize.js:315:28\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async MySQLQueryInterface.insert (/home/ubuntu/app/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)\n' +
+    '    at async model.save (/home/ubuntu/app/node_modules/sequelize/lib/model.js:2490:35)\n' +
+    '    at async tbl_community_post.create (/home/ubuntu/app/node_modules/sequelize/lib/model.js:1362:12)\n' +
+    '    at async createPost (/home/ubuntu/app/api/community/controller.js:371:21)'
+}
+[2024-06-06T13:25:46.135] [ERROR] default - Error
+    at Query.run (/home/ubuntu/app/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /home/ubuntu/app/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.insert (/home/ubuntu/app/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)
+    at async model.save (/home/ubuntu/app/node_modules/sequelize/lib/model.js:2490:35)
+    at async tbl_community_post.create (/home/ubuntu/app/node_modules/sequelize/lib/model.js:1362:12)
+    at async createPost (/home/ubuntu/app/api/community/controller.js:371:21) {
+  name: 'SequelizeDatabaseError',
+  parent: Error: Field 'createdBy' doesn't have a default value
+      at Packet.asError (/home/ubuntu/app/node_modules/mysql2/lib/packets/packet.js:728:17)
+      at Execute.execute (/home/ubuntu/app/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:478:34)
+      at PacketParser.onPacket (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:97:12)
+      at PacketParser.executeStart (/home/ubuntu/app/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:104:25)
+      at Socket.emit (node:events:515:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:545:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:495:3) {
+    code: 'ER_NO_DEFAULT_FOR_FIELD',
+    errno: 1364,
+    sqlState: 'HY000',
+    sqlMessage: "Field 'createdBy' doesn't have a default value",
+    sql: 'INSERT INTO `tbl_community_posts` (`id`,`message`,`userId`,`communityId`,`active`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?);',
+    parameters: [
+      'Post Testing - 6th June',
+      7,
+      '2',
+      true,
+      '2024-06-06 13:25:46',
+      '2024-06-06 13:25:46'
+    ]
+  },
+  original: Error: Field 'createdBy' doesn't have a default value
+      at Packet.asError (/home/ubuntu/app/node_modules/mysql2/lib/packets/packet.js:728:17)
+      at Execute.execute (/home/ubuntu/app/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:478:34)
+      at PacketParser.onPacket (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:97:12)
+      at PacketParser.executeStart (/home/ubuntu/app/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:104:25)
+      at Socket.emit (node:events:515:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:545:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:495:3) {
+    code: 'ER_NO_DEFAULT_FOR_FIELD',
+    errno: 1364,
+    sqlState: 'HY000',
+    sqlMessage: "Field 'createdBy' doesn't have a default value",
+    sql: 'INSERT INTO `tbl_community_posts` (`id`,`message`,`userId`,`communityId`,`active`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?);',
+    parameters: [
+      'Post Testing - 6th June',
+      7,
+      '2',
+      true,
+      '2024-06-06 13:25:46',
+      '2024-06-06 13:25:46'
+    ]
+  },
+  sql: 'INSERT INTO `tbl_community_posts` (`id`,`message`,`userId`,`communityId`,`active`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?);',
+  parameters: [
+    'Post Testing - 6th June',
+    7,
+    '2',
+    true,
+    '2024-06-06 13:25:46',
+    '2024-06-06 13:25:46'
+  ]
+}
+[2024-06-06T13:25:46.136] [ERROR] default - {
+  message: "Field 'createdBy' doesn't have a default value",
+  stack: 'Error\n' +
+    '    at Query.run (/home/ubuntu/app/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)\n' +
+    '    at /home/ubuntu/app/node_modules/sequelize/lib/sequelize.js:315:28\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async MySQLQueryInterface.insert (/home/ubuntu/app/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)\n' +
+    '    at async model.save (/home/ubuntu/app/node_modules/sequelize/lib/model.js:2490:35)\n' +
+    '    at async tbl_community_post.create (/home/ubuntu/app/node_modules/sequelize/lib/model.js:1362:12)\n' +
+    '    at async createPost (/home/ubuntu/app/api/community/controller.js:371:21)'
+}
+[2024-06-06T13:26:54.632] [ERROR] default - Error
+    at Query.run (/home/ubuntu/app/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /home/ubuntu/app/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.insert (/home/ubuntu/app/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)
+    at async model.save (/home/ubuntu/app/node_modules/sequelize/lib/model.js:2490:35)
+    at async tbl_community_post.create (/home/ubuntu/app/node_modules/sequelize/lib/model.js:1362:12)
+    at async createPost (/home/ubuntu/app/api/community/controller.js:371:21) {
+  name: 'SequelizeDatabaseError',
+  parent: Error: Field 'createdBy' doesn't have a default value
+      at Packet.asError (/home/ubuntu/app/node_modules/mysql2/lib/packets/packet.js:728:17)
+      at Execute.execute (/home/ubuntu/app/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:478:34)
+      at PacketParser.onPacket (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:97:12)
+      at PacketParser.executeStart (/home/ubuntu/app/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:104:25)
+      at Socket.emit (node:events:515:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:545:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:495:3) {
+    code: 'ER_NO_DEFAULT_FOR_FIELD',
+    errno: 1364,
+    sqlState: 'HY000',
+    sqlMessage: "Field 'createdBy' doesn't have a default value",
+    sql: 'INSERT INTO `tbl_community_posts` (`id`,`message`,`userId`,`communityId`,`active`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?);',
+    parameters: [
+      'Test Post in this community',
+      7,
+      '3',
+      true,
+      '2024-06-06 13:26:54',
+      '2024-06-06 13:26:54'
+    ]
+  },
+  original: Error: Field 'createdBy' doesn't have a default value
+      at Packet.asError (/home/ubuntu/app/node_modules/mysql2/lib/packets/packet.js:728:17)
+      at Execute.execute (/home/ubuntu/app/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:478:34)
+      at PacketParser.onPacket (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:97:12)
+      at PacketParser.executeStart (/home/ubuntu/app/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:104:25)
+      at Socket.emit (node:events:515:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:545:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:495:3) {
+    code: 'ER_NO_DEFAULT_FOR_FIELD',
+    errno: 1364,
+    sqlState: 'HY000',
+    sqlMessage: "Field 'createdBy' doesn't have a default value",
+    sql: 'INSERT INTO `tbl_community_posts` (`id`,`message`,`userId`,`communityId`,`active`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?);',
+    parameters: [
+      'Test Post in this community',
+      7,
+      '3',
+      true,
+      '2024-06-06 13:26:54',
+      '2024-06-06 13:26:54'
+    ]
+  },
+  sql: 'INSERT INTO `tbl_community_posts` (`id`,`message`,`userId`,`communityId`,`active`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?);',
+  parameters: [
+    'Test Post in this community',
+    7,
+    '3',
+    true,
+    '2024-06-06 13:26:54',
+    '2024-06-06 13:26:54'
+  ]
+}
+[2024-06-06T13:26:54.632] [ERROR] default - {
+  message: "Field 'createdBy' doesn't have a default value",
+  stack: 'Error\n' +
+    '    at Query.run (/home/ubuntu/app/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)\n' +
+    '    at /home/ubuntu/app/node_modules/sequelize/lib/sequelize.js:315:28\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async MySQLQueryInterface.insert (/home/ubuntu/app/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)\n' +
+    '    at async model.save (/home/ubuntu/app/node_modules/sequelize/lib/model.js:2490:35)\n' +
+    '    at async tbl_community_post.create (/home/ubuntu/app/node_modules/sequelize/lib/model.js:1362:12)\n' +
+    '    at async createPost (/home/ubuntu/app/api/community/controller.js:371:21)'
+}
+[2024-06-06T13:29:24.985] [ERROR] default - Error
+    at Query.run (/home/ubuntu/app/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /home/ubuntu/app/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.insert (/home/ubuntu/app/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)
+    at async model.save (/home/ubuntu/app/node_modules/sequelize/lib/model.js:2490:35)
+    at async tbl_community_post.create (/home/ubuntu/app/node_modules/sequelize/lib/model.js:1362:12)
+    at async createPost (/home/ubuntu/app/api/community/controller.js:371:21) {
+  name: 'SequelizeDatabaseError',
+  parent: Error: Field 'createdBy' doesn't have a default value
+      at Packet.asError (/home/ubuntu/app/node_modules/mysql2/lib/packets/packet.js:728:17)
+      at Execute.execute (/home/ubuntu/app/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:478:34)
+      at PacketParser.onPacket (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:97:12)
+      at PacketParser.executeStart (/home/ubuntu/app/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:104:25)
+      at Socket.emit (node:events:515:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:545:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:495:3) {
+    code: 'ER_NO_DEFAULT_FOR_FIELD',
+    errno: 1364,
+    sqlState: 'HY000',
+    sqlMessage: "Field 'createdBy' doesn't have a default value",
+    sql: 'INSERT INTO `tbl_community_posts` (`id`,`message`,`userId`,`communityId`,`file`,`active`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?,?);',
+    parameters: [
+      'Asthma symptoms vary from person to person and can range from mild to severe. They can occur every day or only occasionally',
+      3,
+      '1',
+      'https://sehat-connect-bucket-1.s3.amazonaws.com/uploads/1717680564565-download.jpg',
+      true,
+      '2024-06-06 13:29:24',
+      '2024-06-06 13:29:24'
+    ]
+  },
+  original: Error: Field 'createdBy' doesn't have a default value
+      at Packet.asError (/home/ubuntu/app/node_modules/mysql2/lib/packets/packet.js:728:17)
+      at Execute.execute (/home/ubuntu/app/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:478:34)
+      at PacketParser.onPacket (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:97:12)
+      at PacketParser.executeStart (/home/ubuntu/app/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:104:25)
+      at Socket.emit (node:events:515:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:545:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:495:3) {
+    code: 'ER_NO_DEFAULT_FOR_FIELD',
+    errno: 1364,
+    sqlState: 'HY000',
+    sqlMessage: "Field 'createdBy' doesn't have a default value",
+    sql: 'INSERT INTO `tbl_community_posts` (`id`,`message`,`userId`,`communityId`,`file`,`active`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?,?);',
+    parameters: [
+      'Asthma symptoms vary from person to person and can range from mild to severe. They can occur every day or only occasionally',
+      3,
+      '1',
+      'https://sehat-connect-bucket-1.s3.amazonaws.com/uploads/1717680564565-download.jpg',
+      true,
+      '2024-06-06 13:29:24',
+      '2024-06-06 13:29:24'
+    ]
+  },
+  sql: 'INSERT INTO `tbl_community_posts` (`id`,`message`,`userId`,`communityId`,`file`,`active`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?,?);',
+  parameters: [
+    'Asthma symptoms vary from person to person and can range from mild to severe. They can occur every day or only occasionally',
+    3,
+    '1',
+    'https://sehat-connect-bucket-1.s3.amazonaws.com/uploads/1717680564565-download.jpg',
+    true,
+    '2024-06-06 13:29:24',
+    '2024-06-06 13:29:24'
+  ]
+}
+[2024-06-06T13:29:24.986] [ERROR] default - {
+  message: "Field 'createdBy' doesn't have a default value",
+  stack: 'Error\n' +
+    '    at Query.run (/home/ubuntu/app/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)\n' +
+    '    at /home/ubuntu/app/node_modules/sequelize/lib/sequelize.js:315:28\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async MySQLQueryInterface.insert (/home/ubuntu/app/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)\n' +
+    '    at async model.save (/home/ubuntu/app/node_modules/sequelize/lib/model.js:2490:35)\n' +
+    '    at async tbl_community_post.create (/home/ubuntu/app/node_modules/sequelize/lib/model.js:1362:12)\n' +
+    '    at async createPost (/home/ubuntu/app/api/community/controller.js:371:21)'
+}
+[2024-06-06T13:29:32.784] [ERROR] default - Error
+    at Query.run (/home/ubuntu/app/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /home/ubuntu/app/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.insert (/home/ubuntu/app/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)
+    at async model.save (/home/ubuntu/app/node_modules/sequelize/lib/model.js:2490:35)
+    at async tbl_community_post.create (/home/ubuntu/app/node_modules/sequelize/lib/model.js:1362:12)
+    at async createPost (/home/ubuntu/app/api/community/controller.js:371:21) {
+  name: 'SequelizeDatabaseError',
+  parent: Error: Field 'createdBy' doesn't have a default value
+      at Packet.asError (/home/ubuntu/app/node_modules/mysql2/lib/packets/packet.js:728:17)
+      at Execute.execute (/home/ubuntu/app/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:478:34)
+      at PacketParser.onPacket (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:97:12)
+      at PacketParser.executeStart (/home/ubuntu/app/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:104:25)
+      at Socket.emit (node:events:515:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:545:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:495:3) {
+    code: 'ER_NO_DEFAULT_FOR_FIELD',
+    errno: 1364,
+    sqlState: 'HY000',
+    sqlMessage: "Field 'createdBy' doesn't have a default value",
+    sql: 'INSERT INTO `tbl_community_posts` (`id`,`message`,`userId`,`communityId`,`file`,`active`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?,?);',
+    parameters: [
+      'Asthma symptoms vary from person to person and can range from mild to severe. They can occur every day or only occasionally',
+      3,
+      '1',
+      'https://sehat-connect-bucket-1.s3.ap-south-1.amazonaws.com/uploads/1717680572575-download.jpg',
+      true,
+      '2024-06-06 13:29:32',
+      '2024-06-06 13:29:32'
+    ]
+  },
+  original: Error: Field 'createdBy' doesn't have a default value
+      at Packet.asError (/home/ubuntu/app/node_modules/mysql2/lib/packets/packet.js:728:17)
+      at Execute.execute (/home/ubuntu/app/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:478:34)
+      at PacketParser.onPacket (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:97:12)
+      at PacketParser.executeStart (/home/ubuntu/app/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:104:25)
+      at Socket.emit (node:events:515:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:545:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:495:3) {
+    code: 'ER_NO_DEFAULT_FOR_FIELD',
+    errno: 1364,
+    sqlState: 'HY000',
+    sqlMessage: "Field 'createdBy' doesn't have a default value",
+    sql: 'INSERT INTO `tbl_community_posts` (`id`,`message`,`userId`,`communityId`,`file`,`active`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?,?);',
+    parameters: [
+      'Asthma symptoms vary from person to person and can range from mild to severe. They can occur every day or only occasionally',
+      3,
+      '1',
+      'https://sehat-connect-bucket-1.s3.ap-south-1.amazonaws.com/uploads/1717680572575-download.jpg',
+      true,
+      '2024-06-06 13:29:32',
+      '2024-06-06 13:29:32'
+    ]
+  },
+  sql: 'INSERT INTO `tbl_community_posts` (`id`,`message`,`userId`,`communityId`,`file`,`active`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?,?);',
+  parameters: [
+    'Asthma symptoms vary from person to person and can range from mild to severe. They can occur every day or only occasionally',
+    3,
+    '1',
+    'https://sehat-connect-bucket-1.s3.ap-south-1.amazonaws.com/uploads/1717680572575-download.jpg',
+    true,
+    '2024-06-06 13:29:32',
+    '2024-06-06 13:29:32'
+  ]
+}
+[2024-06-06T13:29:32.784] [ERROR] default - {
+  message: "Field 'createdBy' doesn't have a default value",
+  stack: 'Error\n' +
+    '    at Query.run (/home/ubuntu/app/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)\n' +
+    '    at /home/ubuntu/app/node_modules/sequelize/lib/sequelize.js:315:28\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async MySQLQueryInterface.insert (/home/ubuntu/app/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)\n' +
+    '    at async model.save (/home/ubuntu/app/node_modules/sequelize/lib/model.js:2490:35)\n' +
+    '    at async tbl_community_post.create (/home/ubuntu/app/node_modules/sequelize/lib/model.js:1362:12)\n' +
+    '    at async createPost (/home/ubuntu/app/api/community/controller.js:371:21)'
+}
+[2024-06-06T13:37:39.757] [ERROR] default - MulterError: Unexpected field
+    at wrappedFileFilter (/home/ubuntu/app/node_modules/multer/index.js:40:19)
+    at Multipart.<anonymous> (/home/ubuntu/app/node_modules/multer/lib/make-middleware.js:107:7)
+    at Multipart.emit (node:events:515:28)
+    at Multipart.emit (node:domain:488:12)
+    at HeaderParser.cb (/home/ubuntu/app/node_modules/busboy/lib/types/multipart.js:358:14)
+    at HeaderParser.push (/home/ubuntu/app/node_modules/busboy/lib/types/multipart.js:162:20)
+    at SBMH.ssCb [as _cb] (/home/ubuntu/app/node_modules/busboy/lib/types/multipart.js:394:37)
+    at feed (/home/ubuntu/app/node_modules/streamsearch/lib/sbmh.js:200:10)
+    at SBMH.push (/home/ubuntu/app/node_modules/streamsearch/lib/sbmh.js:104:16)
+    at Multipart._write (/home/ubuntu/app/node_modules/busboy/lib/types/multipart.js:567:19) {
+  code: 'LIMIT_UNEXPECTED_FILE',
+  field: 'ffffffile',
+  storageErrors: []
+}
+[2024-06-06T13:38:12.363] [ERROR] default - Error
+    at Query.run (/home/ubuntu/app/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /home/ubuntu/app/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.insert (/home/ubuntu/app/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)
+    at async model.save (/home/ubuntu/app/node_modules/sequelize/lib/model.js:2490:35)
+    at async tbl_community_post.create (/home/ubuntu/app/node_modules/sequelize/lib/model.js:1362:12)
+    at async createPost (/home/ubuntu/app/api/community/controller.js:371:21) {
+  name: 'SequelizeDatabaseError',
+  parent: Error: Field 'createdBy' doesn't have a default value
+      at Packet.asError (/home/ubuntu/app/node_modules/mysql2/lib/packets/packet.js:728:17)
+      at Execute.execute (/home/ubuntu/app/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:478:34)
+      at PacketParser.onPacket (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:97:12)
+      at PacketParser.executeStart (/home/ubuntu/app/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:104:25)
+      at Socket.emit (node:events:515:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:545:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:495:3) {
+    code: 'ER_NO_DEFAULT_FOR_FIELD',
+    errno: 1364,
+    sqlState: 'HY000',
+    sqlMessage: "Field 'createdBy' doesn't have a default value",
+    sql: 'INSERT INTO `tbl_community_posts` (`id`,`message`,`userId`,`communityId`,`file`,`active`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?,?);',
+    parameters: [
+      'Asthma symptoms vary from person to person and can range from mild to severe. They can occur every day or only occasionally',
+      1,
+      '1',
+      'https://sehat-connect-bucket-1.s3.ap-south-1.amazonaws.com/uploads/1717681092128-download.jpg',
+      true,
+      '2024-06-06 13:38:12',
+      '2024-06-06 13:38:12'
+    ]
+  },
+  original: Error: Field 'createdBy' doesn't have a default value
+      at Packet.asError (/home/ubuntu/app/node_modules/mysql2/lib/packets/packet.js:728:17)
+      at Execute.execute (/home/ubuntu/app/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:478:34)
+      at PacketParser.onPacket (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:97:12)
+      at PacketParser.executeStart (/home/ubuntu/app/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:104:25)
+      at Socket.emit (node:events:515:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:545:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:495:3) {
+    code: 'ER_NO_DEFAULT_FOR_FIELD',
+    errno: 1364,
+    sqlState: 'HY000',
+    sqlMessage: "Field 'createdBy' doesn't have a default value",
+    sql: 'INSERT INTO `tbl_community_posts` (`id`,`message`,`userId`,`communityId`,`file`,`active`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?,?);',
+    parameters: [
+      'Asthma symptoms vary from person to person and can range from mild to severe. They can occur every day or only occasionally',
+      1,
+      '1',
+      'https://sehat-connect-bucket-1.s3.ap-south-1.amazonaws.com/uploads/1717681092128-download.jpg',
+      true,
+      '2024-06-06 13:38:12',
+      '2024-06-06 13:38:12'
+    ]
+  },
+  sql: 'INSERT INTO `tbl_community_posts` (`id`,`message`,`userId`,`communityId`,`file`,`active`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?,?);',
+  parameters: [
+    'Asthma symptoms vary from person to person and can range from mild to severe. They can occur every day or only occasionally',
+    1,
+    '1',
+    'https://sehat-connect-bucket-1.s3.ap-south-1.amazonaws.com/uploads/1717681092128-download.jpg',
+    true,
+    '2024-06-06 13:38:12',
+    '2024-06-06 13:38:12'
+  ]
+}
+[2024-06-06T13:38:12.365] [ERROR] default - {
+  message: "Field 'createdBy' doesn't have a default value",
+  stack: 'Error\n' +
+    '    at Query.run (/home/ubuntu/app/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)\n' +
+    '    at /home/ubuntu/app/node_modules/sequelize/lib/sequelize.js:315:28\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async MySQLQueryInterface.insert (/home/ubuntu/app/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)\n' +
+    '    at async model.save (/home/ubuntu/app/node_modules/sequelize/lib/model.js:2490:35)\n' +
+    '    at async tbl_community_post.create (/home/ubuntu/app/node_modules/sequelize/lib/model.js:1362:12)\n' +
+    '    at async createPost (/home/ubuntu/app/api/community/controller.js:371:21)'
+}
+[2024-06-07T09:30:32.446] [ERROR] default - Error: Illegal arguments: string, object
+    at _async (/home/ubuntu/app/node_modules/bcryptjs/dist/bcrypt.js:286:46)
+    at /home/ubuntu/app/node_modules/bcryptjs/dist/bcrypt.js:307:17
+    at new Promise (<anonymous>)
+    at bcrypt.compare (/home/ubuntu/app/node_modules/bcryptjs/dist/bcrypt.js:306:20)
+    at login (/home/ubuntu/app/api/user/controller.js:56:37)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2024-06-07T09:30:32.454] [ERROR] default - {
+  message: 'Illegal arguments: string, object',
+  stack: 'Error: Illegal arguments: string, object\n' +
+    '    at _async (/home/ubuntu/app/node_modules/bcryptjs/dist/bcrypt.js:286:46)\n' +
+    '    at /home/ubuntu/app/node_modules/bcryptjs/dist/bcrypt.js:307:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at bcrypt.compare (/home/ubuntu/app/node_modules/bcryptjs/dist/bcrypt.js:306:20)\n' +
+    '    at login (/home/ubuntu/app/api/user/controller.js:56:37)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)'
+}
+[2024-06-07T09:30:36.850] [ERROR] default - Error: Illegal arguments: string, object
+    at _async (/home/ubuntu/app/node_modules/bcryptjs/dist/bcrypt.js:286:46)
+    at /home/ubuntu/app/node_modules/bcryptjs/dist/bcrypt.js:307:17
+    at new Promise (<anonymous>)
+    at bcrypt.compare (/home/ubuntu/app/node_modules/bcryptjs/dist/bcrypt.js:306:20)
+    at login (/home/ubuntu/app/api/user/controller.js:56:37)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2024-06-07T09:30:36.850] [ERROR] default - {
+  message: 'Illegal arguments: string, object',
+  stack: 'Error: Illegal arguments: string, object\n' +
+    '    at _async (/home/ubuntu/app/node_modules/bcryptjs/dist/bcrypt.js:286:46)\n' +
+    '    at /home/ubuntu/app/node_modules/bcryptjs/dist/bcrypt.js:307:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at bcrypt.compare (/home/ubuntu/app/node_modules/bcryptjs/dist/bcrypt.js:306:20)\n' +
+    '    at login (/home/ubuntu/app/api/user/controller.js:56:37)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)'
+}
+[2024-06-07T09:30:37.763] [ERROR] default - Error: Illegal arguments: string, object
+    at _async (/home/ubuntu/app/node_modules/bcryptjs/dist/bcrypt.js:286:46)
+    at /home/ubuntu/app/node_modules/bcryptjs/dist/bcrypt.js:307:17
+    at new Promise (<anonymous>)
+    at bcrypt.compare (/home/ubuntu/app/node_modules/bcryptjs/dist/bcrypt.js:306:20)
+    at login (/home/ubuntu/app/api/user/controller.js:56:37)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2024-06-07T09:30:37.763] [ERROR] default - {
+  message: 'Illegal arguments: string, object',
+  stack: 'Error: Illegal arguments: string, object\n' +
+    '    at _async (/home/ubuntu/app/node_modules/bcryptjs/dist/bcrypt.js:286:46)\n' +
+    '    at /home/ubuntu/app/node_modules/bcryptjs/dist/bcrypt.js:307:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at bcrypt.compare (/home/ubuntu/app/node_modules/bcryptjs/dist/bcrypt.js:306:20)\n' +
+    '    at login (/home/ubuntu/app/api/user/controller.js:56:37)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)'
+}
+[2024-06-07T09:30:37.898] [ERROR] default - Error: Illegal arguments: string, object
+    at _async (/home/ubuntu/app/node_modules/bcryptjs/dist/bcrypt.js:286:46)
+    at /home/ubuntu/app/node_modules/bcryptjs/dist/bcrypt.js:307:17
+    at new Promise (<anonymous>)
+    at bcrypt.compare (/home/ubuntu/app/node_modules/bcryptjs/dist/bcrypt.js:306:20)
+    at login (/home/ubuntu/app/api/user/controller.js:56:37)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2024-06-07T09:30:37.898] [ERROR] default - {
+  message: 'Illegal arguments: string, object',
+  stack: 'Error: Illegal arguments: string, object\n' +
+    '    at _async (/home/ubuntu/app/node_modules/bcryptjs/dist/bcrypt.js:286:46)\n' +
+    '    at /home/ubuntu/app/node_modules/bcryptjs/dist/bcrypt.js:307:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at bcrypt.compare (/home/ubuntu/app/node_modules/bcryptjs/dist/bcrypt.js:306:20)\n' +
+    '    at login (/home/ubuntu/app/api/user/controller.js:56:37)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)'
+}
+[2024-06-07T09:30:38.057] [ERROR] default - Error: Illegal arguments: string, object
+    at _async (/home/ubuntu/app/node_modules/bcryptjs/dist/bcrypt.js:286:46)
+    at /home/ubuntu/app/node_modules/bcryptjs/dist/bcrypt.js:307:17
+    at new Promise (<anonymous>)
+    at bcrypt.compare (/home/ubuntu/app/node_modules/bcryptjs/dist/bcrypt.js:306:20)
+    at login (/home/ubuntu/app/api/user/controller.js:56:37)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2024-06-07T09:30:38.057] [ERROR] default - {
+  message: 'Illegal arguments: string, object',
+  stack: 'Error: Illegal arguments: string, object\n' +
+    '    at _async (/home/ubuntu/app/node_modules/bcryptjs/dist/bcrypt.js:286:46)\n' +
+    '    at /home/ubuntu/app/node_modules/bcryptjs/dist/bcrypt.js:307:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at bcrypt.compare (/home/ubuntu/app/node_modules/bcryptjs/dist/bcrypt.js:306:20)\n' +
+    '    at login (/home/ubuntu/app/api/user/controller.js:56:37)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)'
+}
+[2024-06-07T09:30:38.198] [ERROR] default - Error: Illegal arguments: string, object
+    at _async (/home/ubuntu/app/node_modules/bcryptjs/dist/bcrypt.js:286:46)
+    at /home/ubuntu/app/node_modules/bcryptjs/dist/bcrypt.js:307:17
+    at new Promise (<anonymous>)
+    at bcrypt.compare (/home/ubuntu/app/node_modules/bcryptjs/dist/bcrypt.js:306:20)
+    at login (/home/ubuntu/app/api/user/controller.js:56:37)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2024-06-07T09:30:38.198] [ERROR] default - {
+  message: 'Illegal arguments: string, object',
+  stack: 'Error: Illegal arguments: string, object\n' +
+    '    at _async (/home/ubuntu/app/node_modules/bcryptjs/dist/bcrypt.js:286:46)\n' +
+    '    at /home/ubuntu/app/node_modules/bcryptjs/dist/bcrypt.js:307:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at bcrypt.compare (/home/ubuntu/app/node_modules/bcryptjs/dist/bcrypt.js:306:20)\n' +
+    '    at login (/home/ubuntu/app/api/user/controller.js:56:37)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)'
+}
+[2024-06-07T09:30:38.364] [ERROR] default - Error: Illegal arguments: string, object
+    at _async (/home/ubuntu/app/node_modules/bcryptjs/dist/bcrypt.js:286:46)
+    at /home/ubuntu/app/node_modules/bcryptjs/dist/bcrypt.js:307:17
+    at new Promise (<anonymous>)
+    at bcrypt.compare (/home/ubuntu/app/node_modules/bcryptjs/dist/bcrypt.js:306:20)
+    at login (/home/ubuntu/app/api/user/controller.js:56:37)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2024-06-07T09:30:38.365] [ERROR] default - {
+  message: 'Illegal arguments: string, object',
+  stack: 'Error: Illegal arguments: string, object\n' +
+    '    at _async (/home/ubuntu/app/node_modules/bcryptjs/dist/bcrypt.js:286:46)\n' +
+    '    at /home/ubuntu/app/node_modules/bcryptjs/dist/bcrypt.js:307:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at bcrypt.compare (/home/ubuntu/app/node_modules/bcryptjs/dist/bcrypt.js:306:20)\n' +
+    '    at login (/home/ubuntu/app/api/user/controller.js:56:37)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)'
+}
+[2024-06-07T09:30:38.525] [ERROR] default - Error: Illegal arguments: string, object
+    at _async (/home/ubuntu/app/node_modules/bcryptjs/dist/bcrypt.js:286:46)
+    at /home/ubuntu/app/node_modules/bcryptjs/dist/bcrypt.js:307:17
+    at new Promise (<anonymous>)
+    at bcrypt.compare (/home/ubuntu/app/node_modules/bcryptjs/dist/bcrypt.js:306:20)
+    at login (/home/ubuntu/app/api/user/controller.js:56:37)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2024-06-07T09:30:38.525] [ERROR] default - {
+  message: 'Illegal arguments: string, object',
+  stack: 'Error: Illegal arguments: string, object\n' +
+    '    at _async (/home/ubuntu/app/node_modules/bcryptjs/dist/bcrypt.js:286:46)\n' +
+    '    at /home/ubuntu/app/node_modules/bcryptjs/dist/bcrypt.js:307:17\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at bcrypt.compare (/home/ubuntu/app/node_modules/bcryptjs/dist/bcrypt.js:306:20)\n' +
+    '    at login (/home/ubuntu/app/api/user/controller.js:56:37)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)'
+}
+[2024-06-19T16:16:53.919] [ERROR] default - Error
+    at Query.run (/home/ubuntu/app/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /home/ubuntu/app/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.insert (/home/ubuntu/app/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)
+    at async model.save (/home/ubuntu/app/node_modules/sequelize/lib/model.js:2490:35)
+    at async tbl_auto_approvals.create (/home/ubuntu/app/node_modules/sequelize/lib/model.js:1362:12)
+    at async saveAutoApproval (/home/ubuntu/app/api/phr/controller.js:26:24) {
+  name: 'SequelizeDatabaseError',
+  parent: Error: Data too long for column 'abha_number' at row 1
+      at Packet.asError (/home/ubuntu/app/node_modules/mysql2/lib/packets/packet.js:728:17)
+      at Execute.execute (/home/ubuntu/app/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:478:34)
+      at PacketParser.onPacket (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:97:12)
+      at PacketParser.executeStart (/home/ubuntu/app/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:104:25)
+      at Socket.emit (node:events:515:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:545:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:495:3) {
+    code: 'ER_DATA_TOO_LONG',
+    errno: 1406,
+    sqlState: '22001',
+    sqlMessage: "Data too long for column 'abha_number' at row 1",
+    sql: 'INSERT INTO `tbl_auto_approvals` (`id`,`user_id`,`abha_address`,`abha_number`,`auto_approval_id`,`status`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?,?);',
+    parameters: [
+      24,
+      'bhuvansingh1993@sbx',
+      '453534553535445',
+      'iiduue-uiejjdjd-ueidjjd',
+      true,
+      '2024-06-19 16:16:53',
+      '2024-06-19 16:16:53'
+    ]
+  },
+  original: Error: Data too long for column 'abha_number' at row 1
+      at Packet.asError (/home/ubuntu/app/node_modules/mysql2/lib/packets/packet.js:728:17)
+      at Execute.execute (/home/ubuntu/app/node_modules/mysql2/lib/commands/command.js:29:26)
+      at Connection.handlePacket (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:478:34)
+      at PacketParser.onPacket (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:97:12)
+      at PacketParser.executeStart (/home/ubuntu/app/node_modules/mysql2/lib/packet_parser.js:75:16)
+      at Socket.<anonymous> (/home/ubuntu/app/node_modules/mysql2/lib/connection.js:104:25)
+      at Socket.emit (node:events:515:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:545:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:495:3) {
+    code: 'ER_DATA_TOO_LONG',
+    errno: 1406,
+    sqlState: '22001',
+    sqlMessage: "Data too long for column 'abha_number' at row 1",
+    sql: 'INSERT INTO `tbl_auto_approvals` (`id`,`user_id`,`abha_address`,`abha_number`,`auto_approval_id`,`status`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?,?);',
+    parameters: [
+      24,
+      'bhuvansingh1993@sbx',
+      '453534553535445',
+      'iiduue-uiejjdjd-ueidjjd',
+      true,
+      '2024-06-19 16:16:53',
+      '2024-06-19 16:16:53'
+    ]
+  },
+  sql: 'INSERT INTO `tbl_auto_approvals` (`id`,`user_id`,`abha_address`,`abha_number`,`auto_approval_id`,`status`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?,?);',
+  parameters: [
+    24,
+    'bhuvansingh1993@sbx',
+    '453534553535445',
+    'iiduue-uiejjdjd-ueidjjd',
+    true,
+    '2024-06-19 16:16:53',
+    '2024-06-19 16:16:53'
+  ]
+}
+[2024-06-19T16:16:53.925] [ERROR] default - {
+  message: "Data too long for column 'abha_number' at row 1",
+  stack: 'Error\n' +
+    '    at Query.run (/home/ubuntu/app/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)\n' +
+    '    at /home/ubuntu/app/node_modules/sequelize/lib/sequelize.js:315:28\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async MySQLQueryInterface.insert (/home/ubuntu/app/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)\n' +
+    '    at async model.save (/home/ubuntu/app/node_modules/sequelize/lib/model.js:2490:35)\n' +
+    '    at async tbl_auto_approvals.create (/home/ubuntu/app/node_modules/sequelize/lib/model.js:1362:12)\n' +
+    '    at async saveAutoApproval (/home/ubuntu/app/api/phr/controller.js:26:24)'
+}
