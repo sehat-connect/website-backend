@@ -1,0 +1,76 @@
+{
+  "name": "india-shelter-api",
+  "version": "1.0.0",
+  "description": "India Shelter Backend API Docs",
+  "main": "ecosystem.config.js",
+  "directories": {
+    "doc": "docs",
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_ENV=development nodemon ./api/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebYasin/india_shelter.git"
+  },
+  "keywords": [
+    "inframantra"
+  ],
+  "author": "Edvenswa",
+  "license": "ISC",
+  "homepage": "https://github.com/WebYasin/india_shelter/blob/main/README.md",
+  "_moduleAliases": {
+    "@lib": "./lib",
+    "@api": "./api",
+    "@middleware": "./middleware",
+    "@database": "./database/models"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1451.0",
+    "axios": "^1.2.2",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.1",
+    "chalk": "^5.2.0",
+    "composable-middleware": "^0.3.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "errorhandler": "^1.5.1",
+    "exceljs": "^4.3.0",
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.7.0",
+    "express-status-monitor": "^1.2.3",
+    "firebase-admin": "^11.4.1",
+    "fs-extra": "^11.1.0",
+    "helmet": "^6.0.1",
+    "hpp": "^0.2.3",
+    "imagemin": "^8.0.1",
+    "joi": "^17.11.0",
+    "jsonwebtoken": "^9.0.0",
+    "log4js": "^6.7.1",
+    "method-override": "^3.0.0",
+    "module-alias": "^2.2.2",
+    "moment": "^2.29.4",
+    "mqtt": "^4.3.7",
+    "msg91": "^2.2.4",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.3.3",
+    "node": "^21.1.0",
+    "node-image-resizer": "^1.0.0",
+    "node-notifier": "^10.0.1",
+    "nodemailer": "^6.8.0",
+    "path": "^0.12.7",
+    "read-excel-file": "^5.5.3",
+    "request": "^2.88.2",
+    "sequelize": "^6.31.1",
+    "sharp": "^0.32.6",
+    "slug": "^8.2.2",
+    "uuid": "^7.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
